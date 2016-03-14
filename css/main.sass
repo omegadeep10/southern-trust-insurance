@@ -1,0 +1,103 @@
+//Setup
+*
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.clearfix:after
+    content: ""
+    display: table
+    clear: both
+
+$heading: "Lora", "Georgia", Serif
+$paragraph: "Source Sans Pro", Helvetica, sans-serif
+
+.container
+    max-width: 1280px
+    margin: 0 auto
+    padding: 0 20px 
+
+
+.header
+    padding: 25px 0
+    background: white
+
+    .logo
+        display: inline-block
+        width: 200px
+    
+    ul
+        list-style: none
+        float: right
+        margin-top: 10px
+
+        li
+            display: inline-block
+            font-family: $paragraph
+            padding: 0 5px 0 0
+
+            a
+                text-decoration: none
+                color: #333
+
+                &:hover
+                    color: blue
+
+            &:not(:last-child):after
+                content: '|'
+                margin-left: 10px
+
+.hero
+    background: url("../assets/bg.jpg") no-repeat center center fixed
+    background-size: cover
+    height: 70vh
+    position: relative
+    color: white
+    z-index: 0
+    
+    //opacity filter to keep image from conflicting with text
+    &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: black
+        opacity: 0.7
+
+    .container
+        position: absolute
+        top: 50%
+        left: 30%
+        z-index: 1
+        transform: translate(-30%, -50%)
+
+    h1
+        font-family: $heading
+        font-size: 2em
+        width: 400px
+        margin: 0 0 40px 0
+
+    p
+        font-family: $paragraph
+        width: 500px
+        font-size: 1.2em
+        color: rgba(255, 255, 255, 0.8)
+
+    .button
+        display: inline-block
+        text-decoration: none
+        color: rgba(255, 255, 255, 0.6)
+        font-family: $paragraph
+        margin-right: 10px
+        margin-top: 50px
+        padding: 10px 30px
+        border: 1px solid rgba(255, 255, 255, 0.6)
+        border-radius: 50px
+
+        &:hover
+            color: white
+            border: 1px solid white
