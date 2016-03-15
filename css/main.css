@@ -97,60 +97,127 @@
       color: white;
       border: 1px solid white; }
 
-.about {
-  height: 1000px; }
-  .about .container {
-    padding: 30px 0; }
-  .about h2 {
-    text-align: center;
-    margin-top: 80px;
+.product .container {
+  padding: 30px 0; }
+.product h2 {
+  text-align: center;
+  margin-top: 80px;
+  display: block;
+  line-height: 1.8em;
+  font-size: 2em;
+  font-family: "Lora", "Georgia", Serif;
+  font-weight: normal; }
+  .product h2:after {
+    content: "";
     display: block;
-    line-height: 1.8em;
-    font-size: 2em;
-    font-family: "Lora", "Georgia", Serif;
-    font-weight: normal; }
-    .about h2:after {
-      content: "";
-      display: block;
-      width: 50px;
-      height: 2px;
-      background-color: black;
-      margin: 0 auto; }
-  .about .col-1 {
-    width: 33%;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto; }
+.product .col-1 {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px 0; }
+  .product .col-1:not(:last-child) {
+    border-right: 1px solid black; }
+.product h3 {
+  font-family: "Lora", "Georgia", Serif;
+  font-size: 1.4em;
+  margin: 10px 0; }
+  .product h3:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 20px auto; }
+.product ul {
+  list-style: none;
+  font-family: "Source Sans Pro", Helvetica, sans-serif; }
+.product .btn {
+  color: white;
+  padding: 15px 25px;
+  background-color: #3A539B;
+  text-decoration: none;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1.2em;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 20px auto 100px auto;
+  border-radius: 50px; }
+  .product .btn:hover {
+    background-color: #4B77BE; }
+
+.contactus .container {
+  padding: 30px 0 100px 0; }
+  .contactus .container .contact-info {
     display: inline-block;
-    text-align: center;
-    margin: 40px 0;
-    padding: 20px 0; }
-    .about .col-1:not(:last-child) {
-      border-right: 1px solid black; }
-  .about h3 {
-    font-family: "Lora", "Georgia", Serif;
-    font-size: 1.4em;
-    margin: 10px 0; }
-    .about h3:after {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 2px;
-      background-color: black;
-      margin: 10px auto 20px auto; }
-  .about ul {
-    list-style: none;
-    font-family: "Source Sans Pro", Helvetica, sans-serif; }
-  .about .btn {
-    color: white;
-    padding: 15px 25px;
-    background-color: #3A539B;
-    text-decoration: none;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-size: 1.2em;
+    vertical-align: top;
+    width: 49%;
+    padding: 0 50px; }
+  .contactus .container iframe {
+    width: 49%;
+    display: inline-block; }
+.contactus h2 {
+  text-align: center;
+  display: block;
+  line-height: 1.8em;
+  font-size: 2em;
+  font-family: "Lora", "Georgia", Serif;
+  font-weight: normal; }
+  .contactus h2:after {
+    content: "";
     display: block;
-    width: 200px;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto 60px auto; }
+.contactus h3 {
+  font-family: "Lora", "Georgia", Serif;
+  font-size: 1.4em;
+  margin: 0 0 10px 0; }
+  .contactus h3:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 20px 0; }
+.contactus .second-heading {
+  margin-top: 30px; }
+.contactus p {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  margin: 2px 0; }
+
+.footer {
+  background-color: #444;
+  color: white; }
+  .footer .container {
+    padding: 30px; }
+  .footer ul {
+    list-style: none;
+    margin-top: 40px;
+    text-align: center; }
+    .footer ul li {
+      display: inline-block;
+      font-family: "Source Sans Pro", Helvetica, sans-serif;
+      padding: 0 5px 0 0; }
+      .footer ul li a {
+        text-decoration: none;
+        color: #999; }
+        .footer ul li a:hover {
+          color: white; }
+      .footer ul li:not(:last-child):after {
+        color: #999;
+        content: "|";
+        margin-left: 10px; }
+  .footer p {
     text-align: center;
-    margin: 20px auto;
-    border-radius: 50px; }
-    .about .btn:hover {
-      background-color: #4B77BE; }
+    color: #999;
+    margin: 20px 0 50px 0;
+    font-family: "Source Sans Pro", Helvetica, sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
