@@ -189,16 +189,15 @@ $light-blue: #4B77BE
     
     .container
         padding: 30px 0 100px 0
+        
+    .col-1
+        padding: 40px 0
+        text-align: center
+        width: 33%
+        display: inline-block
 
-        .contact-info
-            display: inline-block
-            vertical-align: top
-            width: 49%
-            padding: 0 50px
-
-        iframe
-            width: 49%
-            display: inline-block
+        &:not(:last-child)
+            border-right: 1px solid black
 
     h2
         text-align: center
@@ -227,7 +226,7 @@ $light-blue: #4B77BE
             width: 30px
             height: 2px
             background-color: black
-            margin: 10px auto 20px 0
+            margin: 10px auto 20px auto
 
     .second-heading
         margin-top: 30px
@@ -273,3 +272,35 @@ $light-blue: #4B77BE
         color: #999
         margin: 20px 0 50px 0
         font-family: $paragraph
+
+
+@media (max-width: 927px)
+    .header
+        ul
+            float: none
+
+            &:before
+                content: ""
+                display: block
+                width: 100%
+                height: 1px
+                background-color: #999
+                margin: 20px 0
+
+
+@media (max-width: 800px)
+    .product
+        h2
+            margin-bottom: 40px
+        .col-1
+            width: 100%
+            margin: 20px 0
+            padding: 0
+
+    .contactus
+        h2
+            margin-bottom: 40px
+        .col-1
+            width: 100%
+            padding: 0
+            margin: 20px 0
